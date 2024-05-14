@@ -14,10 +14,12 @@ const Header = () => {
       <img src= "logoTwo.png" className='logoTwo' />
       <nav className={`menu ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">we are</a></li>
+          <li><a href="#">why us</a></li>
+          <li><a href="#">we offer</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
       </nav>
       <div className="burger-menu" onClick={toggleMenu}>
