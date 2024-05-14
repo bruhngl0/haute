@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'gotham';
+    src: url('../../public/GothamBook.ttf') format('truetype');
+  
+    font-style: normal;
+    
+  }
+
+
+  @font-face {
+    font-family: 'gothamBold';
+    src: url('../../public/GothamBold.ttf') format('truetype');
+   
+    font-style: normal;
+    
+  }
+
+  @font-face {
+    font-family: 'gothamMedim';
+    src: url('../../public/GothamMedium.ttf') format('truetype');
+
+    font-style: normal;
+    
+  }
+
+.hero{
+    background-image: url("../../public/assetThree.png");
+    height: 100vh;
+    background-size:cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: zoomAndSlide 30s infinite alternate ease; /* Apply the animation */
+    >h1{
+  
+      padding-top: 3rem;
+      font-size: 32px;
+      font-family: gothamBold;
+        
+    }
+    >p{
+        padding: 32px;
+        padding-top: 0px;
+        font-size: 17px;
+        font-weight: 200;
+        font-family:  Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        line-height: 1.1;
+        font-family: gothamMedim;
+        z-index: 444px;
+
+
+    }
+}
+
+
+.balls{
+    position:fixed;
+    z-index: px;
+    height: 100vh;
+   
+   
+    
+}
+
+
+@keyframes zoomAndSlide {
+    0% {
+        background-size: 100% auto; /* Initial size */
+        background-position: left center; /* Initial position */
+    }
+
+    25% {
+        background-size: 140% auto; /* Initial size */
+        background-position: right top; /* Initial position */
+    }
+    50% {
+        background-size: 120% auto; /* Zooming effect */
+        background-position: right center; /* Sliding effect */
+    }
+    100% {
+        background-size: 100% auto; /* Back to initial size */
+        background-position: left center; /* Back to initial position */
+    }
+}

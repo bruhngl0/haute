@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'gotham';
+    src: url('../../public/GothamBook.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+
+  @font-face {
+    font-family: 'gothamBold';
+    src: url('../../public/GothamBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    
+  }
+
+.product{
+    width: 100vw;
+    margin: 0px;
+    height: 400px;
+    background-color: #ffd5cf;
+    color:#47143D;
+    font-family: 'gotham';
+    font-size: 12px;
+    
+}
+
+.product-one{
+    padding-top: 4rem;
+    background-color: #ffd5cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >img{
+        width: 320px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    >p{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: 'gotham';
+    }
+
+    >h1{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 24px;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+}

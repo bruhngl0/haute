@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'gotham';
+  src: url('../../public/GothamBook.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+@font-face {
+  font-family: 'gothamBold';
+  src: url('../../public/GothamBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    background-color: #ffd5cf;
+    color: #fff;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 444px;
+    position: absolute;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    font-family: gotham;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-left: 30px ;
+    width: 30px;
+  }
+
+  .logoTwo{
+    width: 140px;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 20px; /* Add margin between links */
+}
+  
+  
+  .menu li {
+    margin-right: 30px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 40px;
+    font-size: larger;
+    
+  }
+  
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  
+  .line {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+    color: #4b0637;
+    transition: all 0.3s ease;
+    background-color: #4b0637;
+  }
+
+  .lineOne {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px; /* Adjusting the margin here */
+    transition: all 0.3s ease;
+    background-color: #4b0637;
+  }
+  
+
+  .linetwo {
+    width: 15px;
+    height: 3px;
+    background-color: #fff;
+    margin:  4px;
+    transition: all 0.3s ease;
+    background-color: #4b0637;
+  }
+  @media (max-width: 480px) {
+
+     
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      margin-top:3px;
+      overflow: hidden; /* Hide overflow to prevent scrollbars */
+      width: 0; /* Initially hide the menu */
+      transition: width 0.3s ease; /* Transition for width change */
+    
+    }
+  
+    .menu.open {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffd5cf;
+      height: 20rem;
+      width: 100vw;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      margin-top: 1.3rem;
+    }
+     
+
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        
+    }
+    .burger-menu {
+        display: flex;
+     
+        align-items: flex-end; /* Align burger menu to the right */
+    }
+  }
+  
