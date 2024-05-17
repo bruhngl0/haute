@@ -3,17 +3,16 @@ import '../styles/hero.scss'
 
 const Hero = () => {
   return (
-    <>    <div className='hero'>
-   
-      <h1>WE ARE</h1>
-      <p>Haute Couture, a top Indian apparel company, offers manufacturing, sourcing, and quality inspection services. We deliver high-quality products promtly and competitvely priced, supported by rigorous quality assurance.</p>
+    <div className='hero'>
+      <video className='hero-video' autoPlay loop>
+        <source src='white.mp4'    type='video/mp4' /> 
+      </video>
 
-      <img src = "assetTen.png"  className='explore'/>
+      <img src = "colo.png" className='hc' />
+      
     </div>
-     
-     </>
-
   )
 }
 
 export default Hero
+
